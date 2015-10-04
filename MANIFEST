@@ -6,6 +6,8 @@ lib/Text/CSV/Encoded/Coder/EncodeGuess.pm
 Makefile.PL
 MANIFEST
 META.yml			Module meta-data (added by MakeMaker)
+MYMETA.json
+MYMETA.yml
 README
 sample/sjis.csv
 sample/utf8.csv
