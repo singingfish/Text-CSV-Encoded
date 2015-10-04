@@ -23,9 +23,14 @@ WriteMakefile(
 
     ( $ExtUtils::MakeMaker::VERSION >= 6.46 ? (
         'META_MERGE' => {
-            resources => {
-                repository => 'http://github.com/makamaka/Text-CSV-Encoded',
-            },
-        } ) : ()
+         resources => {
+             bugtracker => 'https://github.com/singingfish/Text-CSV-Encoded/issues',
+             repository => {
+                 type => 'git',
+                 url  => 'git@github.com:singingfish/Text-CSV-Encoded.git',
+                 web  => 'https://github.com/singingfish/Text-CSV-Encoded',
+             },
+        },
+     } ) : ()
     ),
 );

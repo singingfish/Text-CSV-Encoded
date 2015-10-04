@@ -105,7 +105,8 @@ $csv->encoding( undef );
 while( 1 ) {
     my $row = $csv->getline( $fh );
     $csv->eof and last;
-    is( $row->[0], Encode::decode_utf8( $checker->getline( $fh2 )->[1] ) );
+    my $data = $checker->getline( $fh2 )->[1];
+    is( $row->[0], utf8::is_utf8 ($data) ? $data : Encode::decode_utf8( $data ) );
 }
 
 close($fh);
