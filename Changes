@@ -1,5 +1,8 @@
 Revision history for Perl extension Text::CSV::Encoded.
 
+0.22
+	- Text::CSV 1.31 requierd in Makefile.PL (even works in minor version)
+
 0.21  Thu Jun 13 14:31:12 2013
 	- Text::CSV 1.30 requierd in Makefile.PL (even works in minor version)
 

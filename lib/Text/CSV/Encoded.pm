@@ -4,7 +4,7 @@ use strict;
 use vars  qw( $VERSION );
 use Carp ();
 
-$VERSION = '0.21';
+$VERSION = '0.22';
 
 
 BEGIN {
