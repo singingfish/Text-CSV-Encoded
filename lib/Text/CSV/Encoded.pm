@@ -1,10 +1,9 @@
 package Text::CSV::Encoded;
 
 use strict;
-use vars  qw( $VERSION );
 use Carp ();
 
-$VERSION = '0.23';
+# VERSION
 
 
 BEGIN {

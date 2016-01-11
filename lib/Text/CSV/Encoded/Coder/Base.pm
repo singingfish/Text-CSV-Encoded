@@ -1,10 +1,8 @@
 package Text::CSV::Encoded::Coder::Base;
 
-use strict;
+# VERSION
 
-BEGIN {
-    $Text::CSV::Encoded::Coder::Base::VERSION = '0.03';
-}
+use strict;
 
 sub new {
     my $class = shift;
