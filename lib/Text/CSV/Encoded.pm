@@ -256,6 +256,8 @@ __END__
 
 Text::CSV::Encoded - Encoding aware Text::CSV.
 
+=for readme plugin version
+
 =head1 SYNOPSIS
 
     # Here in Perl 5.8 or later
@@ -267,6 +269,8 @@ Text::CSV::Encoded - Encoding aware Text::CSV.
     # parsing CSV is regarded as input
     $csv->parse( $line );      # $line is a iso-8859-1 encoded string
     @columns = $csv->fields(); # they are unicode data
+
+=for readme stop
 
     # combining list is regarded as output
     $csv->combine(@columns);   # they are unicode data
@@ -301,10 +305,55 @@ Text::CSV::Encoded - Encoding aware Text::CSV.
     # pass check value to coder class
     $csv->coder->encode_check_value( Encode::FB_PERLQQ );
 
+=for readme star
 
 =head1 DESCRIPTION
 
 This module inherits L<Text::CSV> and is aware of input/output encodings.
+
+=for readme stop 
+
+=begin :readme
+
+=head1 INSTALLATION 
+
+This module sources are hosted on github 
+https://github.com/singingfish/Text-CSV-Encoded 
+and uses C<Dist::Zilla> to generate the distribution. It can be 
+istalled:
+
+=over 
+
+=item directly
+
+ cpanm https://github.com/singingfish/Text-CSV-Encoded.git
+
+=item from CPAN
+
+ cpan Text::CSV::Encoded
+ cpanm https://github.com/singingfish/Text-CSV-Encoded
+
+=item maualy cloninig the repository:
+
+ git clone https://github.com/singingfish/Text-CSV-Encoded.git
+ cd https://github.com/singingfish/Text-CSV-Encoded
+ perl Makefile.PL
+ make
+ make test
+ make install
+
+=back
+
+=for readme plugin requires
+
+=head1 COPYRIGHT AND LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+=end :readme
+
+=for readme stop
 
 =head1 ENCODINGS
 
