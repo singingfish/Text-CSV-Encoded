@@ -305,7 +305,7 @@ Text::CSV::Encoded - Encoding aware Text::CSV.
     # pass check value to coder class
     $csv->coder->encode_check_value( Encode::FB_PERLQQ );
 
-=for readme star
+=for readme start
 
 =head1 DESCRIPTION
 
