@@ -27,6 +27,8 @@ https://github.com/singingfish/Text-CSV-Encoded
 and uses C<Dist::Zilla> to generate the distribution. It can be 
 istalled:
 
+=over
+
 =item directly
 
  cpanm https://github.com/singingfish/Text-CSV-Encoded.git
