@@ -1,0 +1,46 @@
+=pod
+
+=head1 NAME
+
+Text::CSV::Encoded - Encoding aware Text::CSV.
+
+=head1 VERSION
+
+undef
+
+=head1 SYNOPSIS
+
+    # Here in Perl 5.8 or later
+    $csv = Text::CSV::Encoded->new ({
+        encoding_in  => "iso-8859-1", # the encoding comes into   Perl
+        encoding_out => "cp1252",     # the encoding comes out of Perl
+    });
+
+    # parsing CSV is regarded as input
+    $csv->parse( $line );      # $line is a iso-8859-1 encoded string
+    @columns = $csv->fields(); # they are unicode data
+
+=head1 DESCRIPTION
+
+This module inherits L<Text::CSV> and is aware of input/output encodings.
+
+=head1 REQUIREMENTS
+
+This distribution requires the following modules:
+
+=over 4
+
+=item * L<ExtUtils::MakeMaker>
+
+=item * L<IO::Handle>
+
+=item * L<Test::Harness>
+
+=item * L<Test::More>
+
+=item * L<Test::Pod> (version 1.41)
+
+=item * L<Text::CSV> (version 1.31)
+
+=back
+
