@@ -4,10 +4,6 @@
 
 Text::CSV::Encoded - Encoding aware Text::CSV.
 
-=head1 VERSION
-
-undef
-
 =head1 SYNOPSIS
 
     # Here in Perl 5.8 or later
@@ -23,6 +19,33 @@ undef
 =head1 DESCRIPTION
 
 This module inherits L<Text::CSV> and is aware of input/output encodings.
+
+=head1 INSTALLATION 
+
+This module sources are hosted on github 
+https://github.com/singingfish/Text-CSV-Encoded 
+and uses C<Dist::Zilla> to generate the distribution. It can be 
+istalled:
+
+=item directly
+
+ cpanm https://github.com/singingfish/Text-CSV-Encoded.git
+
+=item from CPAN
+
+ cpan Text::CSV::Encoded
+ cpanm https://github.com/singingfish/Text-CSV-Encoded
+
+=item maualy cloninig the repository:
+
+ git clone https://github.com/singingfish/Text-CSV-Encoded.git
+ cd https://github.com/singingfish/Text-CSV-Encoded
+ perl Makefile.PL
+ make
+ make test
+ make install
+
+=back
 
 =head1 REQUIREMENTS
 
@@ -43,4 +66,9 @@ This distribution requires the following modules:
 =item * L<Text::CSV> (version 1.31)
 
 =back
+
+=head1 COPYRIGHT AND LICENSE
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
 

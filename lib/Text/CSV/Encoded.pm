@@ -256,8 +256,6 @@ __END__
 
 Text::CSV::Encoded - Encoding aware Text::CSV.
 
-=for readme plugin version
-
 =head1 SYNOPSIS
 
     # Here in Perl 5.8 or later
@@ -311,8 +309,6 @@ Text::CSV::Encoded - Encoding aware Text::CSV.
 
 This module inherits L<Text::CSV> and is aware of input/output encodings.
 
-=for readme stop 
-
 =begin :readme
 
 =head1 INSTALLATION 
@@ -321,8 +317,6 @@ This module sources are hosted on github
 https://github.com/singingfish/Text-CSV-Encoded 
 and uses C<Dist::Zilla> to generate the distribution. It can be 
 istalled:
-
-=over 
 
 =item directly
 
