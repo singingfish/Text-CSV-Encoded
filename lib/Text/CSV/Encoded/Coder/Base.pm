@@ -3,6 +3,7 @@ package Text::CSV::Encoded::Coder::Base;
 # VERSION
 
 use strict;
+use warnings;
 
 sub new {
     my $class = shift;
