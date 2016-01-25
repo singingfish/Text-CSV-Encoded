@@ -5,6 +5,7 @@
 use strict;
 use warnings;
 
+use 5.008;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
@@ -15,6 +16,7 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Text-CSV-Encoded",
   "LICENSE" => "perl",
+  "MIN_PERL_VERSION" => "5.008",
   "NAME" => "Text::CSV::Encoded",
   "PREREQ_PM" => {
     "IO::Handle" => 0,

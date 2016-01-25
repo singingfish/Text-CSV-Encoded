@@ -51,17 +51,11 @@ istalled:
 
 =head1 REQUIREMENTS
 
+This distribution requires Perl v5.8.0.
+
 This distribution requires the following modules:
 
 =over 4
-
-=item * L<ExtUtils::MakeMaker>
-
-=item * L<IO::Handle>
-
-=item * L<Test::Harness>
-
-=item * L<Test::More>
 
 =item * L<Test::Pod> (version 1.41)
 

@@ -1,6 +1,7 @@
 package Text::CSV::Encoded;
 
 use strict;
+use warnings;
 use Carp ();
 
 # VERSION
@@ -317,6 +318,8 @@ This module sources are hosted on github
 https://github.com/singingfish/Text-CSV-Encoded 
 and uses C<Dist::Zilla> to generate the distribution. It can be 
 istalled:
+
+=over
 
 =item directly
 
