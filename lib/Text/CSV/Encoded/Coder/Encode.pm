@@ -4,12 +4,12 @@ use 5.008;
 use strict;
 use warnings;
 
+# VERSION
+
 use base qw( Text::CSV::Encoded::Coder::Base );
 
 use Carp ();
 use Encode ();
-
-our $VERSION = '0.05';
 
 my %EncoderCache;
 

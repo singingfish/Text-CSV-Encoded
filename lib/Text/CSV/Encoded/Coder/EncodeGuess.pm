@@ -4,13 +4,13 @@ use 5.008;
 use strict;
 use warnings;
 
+# VERSION
+
 use base qw( Text::CSV::Encoded::Coder::Encode );
 
 use Carp ();
 use Encode ();
 use Encode::Guess;
-
-our $VERSION = '0.04';
 
 
 sub decode {
