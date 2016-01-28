@@ -31,12 +31,12 @@ istalled:
 
 =item directly
 
- cpanm https://github.com/singingfish/Text-CSV-Encoded.git
+ cpanm git://github.com/singingfish/Text-CSV-Encoded.git
 
 =item from CPAN
 
+ cpanm Text::CSV::Encoded # or
  cpan Text::CSV::Encoded
- cpanm https://github.com/singingfish/Text-CSV-Encoded
 
 =item maualy cloninig the repository:
 
