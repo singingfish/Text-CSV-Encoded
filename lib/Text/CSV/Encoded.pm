@@ -487,7 +487,7 @@ And in C<combine> and C<print>, it is assumed as an encoding for the passing lis
 If C<encoding> is not specified or is set with false value (C<undef>),
 the field data will be regarded as Unicode (when L<Text::CSV::Encoded::Coder::Encode> is used).
 
-    # ex.) a souce code is encoded in euc-jp, and print to stdout in shiftjis.
+    # ex.) a source code is encoded in euc-jp, and print to stdout in shiftjis.
     @fields = ( .... );
     $csv->encoding('euc-jp')
         ->encoding_to_combine('shiftjis') # same as encoding_out
@@ -633,7 +633,7 @@ and then it might guess the encoding from the given list.
 It is important to remember the guessing feature is not always successful.
 
 Or, the method can be applied to C<encoding>.
-For exmaple, you want to convert data from Microsoft Excel to CSV.
+For example, you want to convert data from Microsoft Excel to CSV.
 
     use Text::CSV::Encoded  coder_class => 'Text::CSV::Encoded::Coder::EncodeGuess';
     use Spreadsheet::ParseExcel;
