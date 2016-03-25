@@ -283,8 +283,8 @@ Text::CSV::Encoded - Encoding aware Text::CSV.
     $csv->encoding_in('shiftjis')->encoding_out('utf8');
     $csv->eol("\n");
 
-    open (my $in,  "sjis.csv");
-    open (my $out, "output.csv");
+    open my $in,  "<", "sjis.csv";
+    open my $out, ">", "output.csv";
 
     # change an encoding from shiftjis to utf8
 
